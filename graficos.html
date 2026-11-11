@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Web — Recursos Gráficos</title>
+  <link rel="stylesheet" href="css/style.css">
+<script src="scripts.js"></script>
+<section>
+<h1>
+<di class="menu">
+  <a href="Index.html">Menu</a>
+  </di>
+
+    <header class="flex">
+
+            <a href="curriculo_2.0.html">Curriculo</a>
+            <a href="Formulario.html">Formulario</a>
+            <a href="multimidia.html">Multimidia</a>
+        
+    </header>
+</h1>
+</section>
+
+</head>
+<body>
+
+  </header>
+
+  <main>
+
+    <section id="secao-canvas">
+      <h2>Desenho com Canvas</h2>
+      
+      <canvas id="desenho" width="400" height="200"
+              aria-label="Desenho gerado por script contendo retângulos e círculos coloridos"
+              role="img">
+        Seu navegador não suporta o elemento canvas.
+      </canvas>
+    </section>
+
+    <section id="secao-svg">
+      <h2>Ilustração com SVG</h2>
+      
+
+      <div class="svg-wrapper">
+        <svg id="ilustracao-svg"
+             viewBox="0 0 400 200"
+             xmlns="http://www.w3.org/2000/svg"
+             role="img"
+             aria-label="Ilustração vetorial com um retângulo laranja, um círculo roxo e uma estrela amarela">
+          <title>Ilustração de exemplo em SVG</title>
+
+          <rect class="forma-retangulo" x="20" y="20" width="120" height="80" rx="10" />
+
+          <circle class="forma-circulo" cx="220" cy="60" r="45" />
+
+          <polygon class="forma-poligono"
+                   points="330,15 345,55 388,55 353,80 366,120 330,96 294,120 307,80 272,55 315,55" />
+        </svg>
+      </div>
+    </section>
+
+    <section id="secao-comparacao">
+      <h2>Canvas x SVG: quando usar cada um</h2>
+    
+      <table class="tabela-comparativa">
+        <thead>
+          <tr>
+            <th>Critério</th>
+            <th>Canvas</th>
+            <th>SVG</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tipo de renderização</td>
+            <td>Baseada em pixels (raster)</td>
+            <td>Baseada em vetores</td>
+          </tr>
+          <tr>
+            <td>Escalabilidade</td>
+            <td>Perde qualidade ao ampliar</td>
+            <td>Mantém a qualidade em qualquer tamanho</td>
+          </tr>
+          <tr>
+            <td>Acessibilidade</td>
+            <td>Limitada, exige atributos manuais</td>
+            <td>Boa, via elementos DOM e atributos ARIA</td>
+          </tr>
+          <tr>
+            <td>Melhor uso</td>
+            <td>Jogos, animações, muitos elementos</td>
+            <td>Ícones, ilustrações, gráficos estáticos/interativos</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Projeto de estudos — HTML, CSS</p>
+  </footer>
+
+  <script src="js/graficos.js"></script>
+</body>
+</html>
